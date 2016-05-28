@@ -120,50 +120,50 @@
 			</div>
 		</div>	
 	</footer>
-</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 	<script>
-		var open = document.querySelector("#open");
-		var menu = document.querySelector("#menu");
-		var close = document.querySelector("#close");
-		function toggleMenu(){
-			console.log("aaaaa")
-	      	menu.classList.toggle('active');
-	    }
-	    open.addEventListener("click",toggleMenu)
-	    close.addEventListener("click",toggleMenu)
-
-
-		  WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro::latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
+	WebFontConfig = {
+	google: { families: [ 'Source+Sans+Pro::latin' ] }
+	};
+	(function() {
+	var wf = document.createElement('script');
+	wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
+	})();		
+	</script>
+	<script>
+	var open = document.querySelector("#open");
+	var menu = document.querySelector("#menu");
+	var close = document.querySelector("#close");
+	function toggleMenu(){
+	console.log("aaaaa")
+	menu.classList.toggle('active');
+	}
+	open.addEventListener("click",toggleMenu)
+	close.addEventListener("click",toggleMenu)
 	/* Blazy */
 	var bLazy = new Blazy({
-      selector: 'img'
-    });
+	    selector: 'img'
+	});
 
-    /* Hammer */
-    function showMenu(){
-      menu.classList.add('active');
-    }
-    function hideMenu(){
-      menu.classList.remove('active');
-    }
-    /* Gestos Touch */
-    var body = document.body;
-    var gestos = new Hammer(body);
-    gestos.on('swipeleft', hideMenu);
-    gestos.on('swiperight',showMenu);
+	/* Hammer */
+	function showMenu(){
+		menu.classList.add('active');
+	}
+	function hideMenu(){
+		menu.classList.remove('active');
+	}
+	/* Gestos Touch */
+	var body = document.body;
+	var gestos = new Hammer(body);
+	gestos.on('swipeleft', hideMenu);
+	gestos.on('swiperight',showMenu);
 	</script>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/spatial.min.css">
+</body>
 </html>
-<link rel="stylesheet" href="css/normalize.min.css">
-<link rel="stylesheet" href="css/spatial.min.css">
