@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spatial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<section class="portada">
+		<header class="header">
+			<span class="open icon-menu" id="open"></span>
+			<div class="logo-text">
+				<span>SPATIAL</span>
+			</div>
+			<nav class="nav" id="menu">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">GENERIC</a></li>
+					<li><a href="#">PRODUCT</a></li>
+				</ul>
+				<span class="close icon-cross" id="close"></span>
+			</nav>
+		</header>
+		<article class="text-and-button">
+			<h1 class="title">SPARTIAL</h1>
+			<p class="text">LOREM IPSUM DOLOR SIT AMET NULLAM CONSEQUAT INTERDUM VIVAMUS DONCE SED LIBERO.</p>
+			<button class="boton">GET STARTED</button>
+		</article>
+	</section>
+	<div class="contenedor">
+		<section class="col-1">
+			<div class="a">
+				<h2 class="title">MAECENAS LUCTUS LECTUS</h2>
+				<p class="text">PERSPICIATIS DOLOREMQUE RECUSANDAE DOLOR</p>
+			</div>
+			<div class="b">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.</p>
+				<p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.</p>
+			</div>
+		</section>
+	</div>
+	<section class="col-2">
+		<div class="contenedor">
+			<h2 class="title">FUSCE ULTRICES FRINGILLA</h2>
+			<p class="text">MAECENAS VITAE TELLUS FEUGIAT ELEIFEND</p>
+			<article class="card">
+				<div class="margin-right">
+					<img data-src="images/card-1.jpg" alt="Image card">
+					<h4 class="text-card">LOREM IPSUM DOLOR SIT AMET.</h4>
+				</div>
+				<div class="margin-left">
+					<img data-src="images/card-2.jpg" alt="Image card">
+					<h4 class="text-card">LOREM IPSUM DOLOR SIT AMET.</h4>
+				</div>
+				<button class="boton">NULLA LUCTUS</button>
+				<button class="boton">NULLA LUCTUS</button>
+			</article>
+		</div>			
+	</section>
+	<div class="contenedor">
+		<section class="col-3">
+			<h2 class="title center-text">MAURIS VULPUTATE DOLOR</h2>
+			<p class="text center-text">FEUGIAT SED LOREM IPSUM MAGNA</p>
+			<div class="center">
+				<article class="card-col3 mobile-card">
+					<div class="div">
+						<div class="div-anidado right">
+							<h4 class="title">LOREM IPSUM</h4>
+							<span>LOREM IPSUM DOLOR SIT</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+						</div>
+						<img data-src="images/circle-1.jpg" alt="">
+					</div>
+					<div class="div">
+						<div class="div-anidado right">
+							<h4 class="title">LOREM IPSUM</h4>
+							<span>LOREM IPSUM DOLOR SIT</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+						</div>
+						<img data-src="images/circle-2.jpg" alt="">
+					</div>			
+				</article>
+				<article class="card-col3">
+					<div class="div">
+						<img data-src="images/circle-3.jpg" alt="">
+						<div class="div-anidado left">
+							<h4 class="title">LOREM IPSUM</h4>
+							<span>LOREM IPSUM DOLOR SIT</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+						</div>
+					</div>
+					<div class="div">
+						<img data-src="images/circle-4.jpg" alt="">
+						<div class="div-anidado left">
+							<h4 class="title">LOREM IPSUM</h4>
+							<span>LOREM IPSUM DOLOR SIT</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+						</div>
+					</div>
+				</article>
+			</div>			
+		</section>
+	</div>
+	<section class="col-4">
+		<div class="contenedor">
+			<h2 class="title">AENEAN ELEMENTUM LIGULA</h2>
+			<p class="text">FEUGIAT SED LOREM IPSUM MAGNA</p>
+			<button class="boton">GET IN TOUCH</button>
+		</div>
+	</section>
+	<footer class="footer center-text">
+		<div class="contenedor">
+			<div class="social">
+				<a href="#"><i class="icon-facebook"></i></a>
+				<a href="#"><i class="icon-twitter"></i></a>
+				<a href="#"><i class="icon-instagram"></i></a>
+			</div>
+			<div class="copy">
+				© Untitled Design: TEMPLATED Images: Unsplash
+			</div>
+		</div>	
+	</footer>
+</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+	<script>
+		var open = document.querySelector("#open");
+		var menu = document.querySelector("#menu");
+		var close = document.querySelector("#close");
+		function toggleMenu(){
+			console.log("aaaaa")
+	      	menu.classList.toggle('active');
+	    }
+	    open.addEventListener("click",toggleMenu)
+	    close.addEventListener("click",toggleMenu)
+
+
+		  WebFontConfig = {
+    google: { families: [ 'Source+Sans+Pro::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+	/* Blazy */
+	var bLazy = new Blazy({
+      selector: 'img'
+    });
+
+    /* Hammer */
+    function showMenu(){
+      menu.classList.add('active');
+    }
+    function hideMenu(){
+      menu.classList.remove('active');
+    }
+    /* Gestos Touch */
+    var body = document.body;
+    var gestos = new Hammer(body);
+    gestos.on('swipeleft', hideMenu);
+    gestos.on('swiperight',showMenu);
+	</script>
+</html>
