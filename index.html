@@ -120,9 +120,21 @@
 			</div>
 		</div>	
 	</footer>
-</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script>
+		WebFontConfig = {
+	    google: { families: [ 'Source+Sans+Pro::latin' ] }
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })();
+	</script>
 	<script>
 		var open = document.querySelector("#open");
 		var menu = document.querySelector("#menu");
@@ -134,18 +146,6 @@
 	    open.addEventListener("click",toggleMenu)
 	    close.addEventListener("click",toggleMenu)
 
-
-		  WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro::latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
 	/* Blazy */
 	var bLazy = new Blazy({
       selector: 'img'
@@ -164,6 +164,7 @@
     gestos.on('swipeleft', hideMenu);
     gestos.on('swiperight',showMenu);
 	</script>
-</html>
 <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="css/spatial.min.css">
+</body>
+</html>
